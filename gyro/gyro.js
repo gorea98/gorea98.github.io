@@ -27,7 +27,7 @@ function desenare(unghi_x, unghi_y)
 	context.arc(x,y,r,0,2*Math.PI);
 
 	// desenam calea
-	context.Stroke();
+	context.stroke();
 }
 
 function on_gyro_data_uab(e)
@@ -57,6 +57,6 @@ function on_acc_data_uab(e)
 	
 	document.getElementById("id_rot_x").innerHTML = Math.round(rot_x * 100)/100;
 	document.getElementById("id_rot_y").innerHTML = Math.round(rot_y * 100)/100;
-	document.getElementById("id_rot_z").innerHTML = Math.round(rot_z * 100)/100;
+	
 }
 

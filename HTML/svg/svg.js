@@ -10,11 +10,11 @@ function desenare(unghi_x, unghi_y)
 	
 	var circle = document.getElementById("id_circle");
 	var svg = document.getElementById("id_svg");
-	
+	circle.getAttribute("r");
 	
 	var r = 10;
-	var x =  unghi_x / 90 * (svg.width / 2 - r);
-	var y =  unghi_y / 90 * (svg.width / 2 - r);
+	var x =  unghi_x / 90 * (svg.width / 2 - r) + svg.width / 2;
+	var y =  unghi_y / 90 * (svg.height / 2 - r) + svg.height / 2;
 	
 	circle.setAttribute("cx", x);
 	circle.setAttribute("cy", y);

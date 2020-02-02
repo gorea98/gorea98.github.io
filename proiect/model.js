@@ -6,7 +6,7 @@
 		window.addEventListener('deviceorientation', function(event) {
 			var alpha;
 			
-                //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord)
+                //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord : directia masurata in raport cu nordul magnetic)
                 if(event.webkitCompassHeading) {
 					
                   alpha = event.webkitCompassHeading;
@@ -21,7 +21,7 @@
 					webkitAlpha = alpha;
 					if(!window.chrome) {
                     
-                    webkitAlpha = alpha-270; // calculul alph-ei pentru chrome
+                    webkitAlpha = 270 - alpha; // calculul alph-ei pentru Chrome
                   }
 					}
  

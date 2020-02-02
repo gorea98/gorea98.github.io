@@ -7,7 +7,7 @@
 			
 			var alpha;
 			
-                //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord : directia masurata in raport cu nordul magnetic)
+                //pentru iOS (webkitCompassHeading - diferenta dintre viteza imprejurul axei z si Nord : directia masurata in raport cu nordul magnetic)
                 if(event.webkitCompassHeading) {
 					
                   alpha = event.webkitCompassHeading;
@@ -25,7 +25,7 @@
 				// Rotirea imaginii
 				busola.style.Transform = 'rotate(' + alpha + 'deg)'; 
                 busola.style.WebkitTransform = 'rotate('+ alpha + 'deg)'; // Chrome etc. 
-                
+                busola.style.MozTransform = 'rotate(' + alpha + 'deg)'; // Firefox
               }, false);
         }
     

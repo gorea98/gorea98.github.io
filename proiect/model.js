@@ -19,7 +19,10 @@
 					
 					val_alpha = event.alpha;
 					alphaWebkit = val_alpha;
-					
+					if(!window.chrome) {
+                    
+                    webkitAlpha = alpha-270;
+                  }
 					}
  
 				// Rotirea imaginii

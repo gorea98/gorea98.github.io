@@ -14,15 +14,13 @@ var busola = document.getElementById('busola');
                 else {
 					alpha = event.alpha;
 					webkitAlpha = alpha;
-						if(!window.chrome) {
-							webkitAlpha = alpha-270;
-						}
+					
 					}
  
 				// Rotarile imaginii imaginii
                 busola.style.Transform = 'rotate(' + alpha + 'deg)';
                 busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
+                
               }, false);
         }
     

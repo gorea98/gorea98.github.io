@@ -18,16 +18,12 @@
                 else {
 					
 					alpha = event.alpha;
-					webkitAlpha = alpha;
-					if(!window.chrome) {
-                    
-                    webkitAlpha = 270 - alpha; // calculul alph-ei pentru Chrome
-                  }
+					
 					}
  
 				// Rotirea imaginii
 				busola.style.Transform = 'rotate(' + alpha + 'deg)'; 
-                busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)'; // Chrome etc.
+                busola.style.WebkitTransform = 'rotate('+ alpha + 'deg)'; // Chrome etc.
                 busola.style.MozTransform = 'rotate(' + alpha + 'deg)'; // Firefox
               }, false);
         }

@@ -3,7 +3,8 @@
 	var busola = document.getElementById('busola');
 	
 	if(window.DeviceOrientationEvent) {
-		window.addEventListener('deviceorientation', function(event) {
+		window.addEventListener('deviceorientation', function(event) 
+		window.addEventListener('deviceorientationabsolute', deviceOrientationEvent, true){
 			var alpha;
 			
                 //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord : directia masurata in raport cu nordul magnetic)
@@ -24,7 +25,7 @@
 				// Rotirea imaginii
 				busola.style.Transform = 'rotate(' + alpha + 'deg)'; 
                 busola.style.WebkitTransform = 'rotate('+ alpha + 'deg)'; // Chrome etc.
-                busola.style.MozTransform = 'rotate(' + alpha + 'deg)'; // Firefox
+                busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; // Firefox, gradatie inversa
               }, false);
         }
     

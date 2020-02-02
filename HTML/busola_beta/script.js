@@ -9,4 +9,4 @@ navigator.geolocation.watchPosition((data) => {
 }, (err) => {
   console.error(err; //console.log the error
   alert('Hey, you gotta allow that to happen!');
-});
+}));

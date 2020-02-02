@@ -11,5 +11,5 @@ body
 #busola
 {
 	width:100%;
-	
+	transform: rotate(180deg);
 }

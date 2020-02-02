@@ -14,8 +14,8 @@ body
 #busola
 {
 	width: 85%;
-	height: 85%;
-	margin: 0px auto 0px auto;
+	padding: auto;
+	margin: auto;
 }
 
 .titlu 

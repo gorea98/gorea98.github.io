@@ -1,6 +1,5 @@
 
-function busola_NSEW{
-	
+
 	var busola = document.getElementById('busola');
 	
 	if(window.DeviceOrientationEvent) {
@@ -30,4 +29,3 @@ function busola_NSEW{
               }, false);
         }
     
-}

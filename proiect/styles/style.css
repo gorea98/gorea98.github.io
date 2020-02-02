@@ -13,15 +13,15 @@ body
 
 #busola
 {
-	width: 90%;
+	width: 75%;
 	margin: 0px auto 0px auto;
 }
 
 .titlu 
 {
-	font-size: 50px;
+	font-size: 100px;
 	text-align: center;
 	color: #006400;
 	font-family: "Verdana";
-	border-bottom: 2px dotted white;
+	border-bottom: 5px dotted white;
 }

@@ -8,12 +8,13 @@ body
 	display: flex;	
 	background-color: #f5f5dc;
 	padding: 0px auto 0px auto;
-	margin: 130px auto 0px auto;
+	margin: 150px auto 0px auto;
 }
 
 #busola
 {
 	width: 85%;
+	height: 85%;
 	margin: 0px auto 0px auto;
 }
 

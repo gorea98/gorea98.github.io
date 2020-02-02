@@ -28,7 +28,7 @@
 				// Rotirea imaginii
 				busola.style.Transform = 'rotate(' + alpha + 'deg)'; // majoritatea browserelor
                 busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)'; // Chrome si restul pe Webkit 
-                busola.style.MozTransform = 'rotate(' + alpha + 'deg)'; // Firefox, rotare inversa
+                busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; // Firefox, rotare inversa
               }, false);
         }
     

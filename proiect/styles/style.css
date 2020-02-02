@@ -32,8 +32,21 @@ body
 .versiune {
 	
 	position:absolute;
-	top: 800px;
+	top: 550px;
 	left: 280px;
 }
 
+.coordonate {
+	
+	position:absolute;
+	top: 550px;
+	left: 240px;
+}
+
+.soare {
+	
+	position:absolute;
+	top: 550px;
+	left: 200px;
+}
 }

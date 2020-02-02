@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML = "Logic = UI Version 2020.02.02.0";
+document.getElementById("id_logic").innerHTML = "Logic : 2020.02.02.0";
 
 	var busola = document.getElementById('busola');
 	
@@ -31,3 +31,8 @@ document.getElementById("id_logic").innerHTML = "Logic = UI Version 2020.02.02.0
     
 //////////////////////////////////////////////////////////////////////
 
+function verifica_versiune()
+{
+	var popup = document.getElementById("id_UI");
+	popup.classList.toggle("show");
+}

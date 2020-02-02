@@ -1,4 +1,4 @@
-  function init() {
+
         var busola = document.getElementById('busola');
         if(window.DeviceOrientationEvent) {
   
@@ -26,4 +26,4 @@
                 busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
               }, false);
         }
-      }
+    

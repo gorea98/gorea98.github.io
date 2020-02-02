@@ -1,26 +1,33 @@
-var busola = document.getElementById('busola');
 
+function busola_NSEW{
+	
+	var busola = document.getElementById('busola');
+	
 	if(window.DeviceOrientationEvent) {
 		window.addEventListener('deviceorientation', function(event) {
-			var alpha;
+			var val_alpha;
 			
-                //pentru iOS
+                //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord)
                 if(event.webkitCompassHeading) {
-                  alpha = event.webkitCompassHeading;
-                  busola.style.WebkitTransform = 'rotate(-' + alpha + 'deg)';
+					
+                  val_alpha = event.webkitCompassHeading;
+                  busola.style.WebkitTransform = 'rotate(-' + val_alpha + 'deg)';
+				  
                 }
 				
                 // pentru Android
                 else {
-					alpha = event.alpha;
-					webkitAlpha = alpha;
+					
+					val_alpha = event.alpha;
+					alphaWebkit = val_alpha;
 					
 					}
  
-				// Rotarile imaginii imaginii
-                busola.style.Transform = 'rotate(' + alpha + 'deg)';
-                busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                
+				// Rotirea imaginii
+                busola.style.WebkitTransform = 'rotate('+ alphaWebkit + 'deg)'; // Chrome si Safari
+                busola.style.MozTransform = 'rotate(-' + val_alpha + 'deg)'; // Firefox, rotare inversa
+				busola.style.Transform = 'rotate(' + val_alpha + 'deg)'; // restul browserelor
               }, false);
         }
     
+}

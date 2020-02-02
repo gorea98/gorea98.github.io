@@ -18,7 +18,7 @@
                 else {
 					
 					alpha = event.alpha;
-					alphaWebkit = alpha;
+					webkitAlpha = alpha;
 					if(!window.chrome) {
                     
                     webkitAlpha = alpha-270;
@@ -26,9 +26,9 @@
 					}
  
 				// Rotirea imaginii
-                busola.style.WebkitTransform = 'rotate('+ alphaWebkit + 'deg)'; // Chrome si Safari
+				busola.style.Transform = 'rotate(' + alpha + 'deg)'; // majoritatea browserelor
+                busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)'; // Chrome si Safari
                 busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; // Firefox, rotare inversa
-				busola.style.Transform = 'rotate(' + alpha + 'deg)'; // restul browserelor
               }, false);
         }
     

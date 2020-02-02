@@ -23,7 +23,7 @@
 					}
  
 				// Rotirea imaginii
-				busola.style.Transform = 'rotate(' + alpha + 'deg)';
+				busola.style.Transform = 'rotate(' + alpha-180 + 'deg)';
               }, false);
         }
     

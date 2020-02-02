@@ -8,12 +8,12 @@ body
 	display: flex;	
 	background-color: #f5f5dc;
 	padding: 0px auto 0px auto;
-	margin: 100px auto 0px auto;
+	margin: 130px auto 0px auto;
 }
 
 #busola
 {
-	width: 75%;
+	width: 85%;
 	margin: 0px auto 0px auto;
 }
 
@@ -23,5 +23,5 @@ body
 	text-align: center;
 	color: #006400;
 	font-family: "Verdana";
-	border-bottom: 5px dotted white;
+	border-bottom: 5px dotted #ffff00;
 }

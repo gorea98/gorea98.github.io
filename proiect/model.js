@@ -33,6 +33,6 @@ document.getElementById("id_logic").innerHTML = "Logic : 2020.02.02.0";
 
 function verifica_versiune()
 {
-	var popup = document.getElementById("id_UI");
-	popup.classList.toggle("show");
+	var informatii = document.getElementById('id_UI');
+	alert(informatii.value);
 }

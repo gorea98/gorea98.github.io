@@ -10,7 +10,7 @@ body
 	display: flex;	
 	background-color: #f5f5dc;
 	padding: 0px auto 0px auto;
-	margin: 150px auto 0px auto;
+	margin: 75px auto 0px auto;
 }
 
 #busola
@@ -22,7 +22,7 @@ body
 
 .titlu 
 {
-	font-size: 100px;
+	font-size: 30px;
 	text-align: center;
 	color: #006400;
 	font-family: "Verdana";
@@ -32,8 +32,8 @@ body
 .versiune {
 	
 	position:absolute;
-	top: 1300px;
-	left: 500px;
+	top: 800px;
+	left: 280px;
 }
 
 }

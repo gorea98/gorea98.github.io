@@ -1,4 +1,4 @@
-
+document.getElementById("id_logic").innerHTML = "Logic = UI Version 2020.02.02.0";
 
 	var busola = document.getElementById('busola');
 	
@@ -25,7 +25,7 @@
 				// Rotirea imaginii
 				busola.style.Transform = 'rotate(' + alpha + 'deg)'; 
                 busola.style.WebkitTransform = 'rotate('+ alpha + 'deg)'; // Chrome etc. 
-                busola.style.MozTransform = 'rotate(' + alpha + 'deg)'; // Firefox
+
               }, false);
         }
     

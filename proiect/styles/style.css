@@ -1,15 +1,26 @@
 body 
 {
-	background-color: ffffff;
+	background-color: #f5f5dc;
 }
 
 #div_busola
 {
 	width:100%;
-	background-color: green;
+	background-color: #f5f5dc;
+	margin: auto;
+	margin-top: 70px;
 }
 
 #busola
 {
 	width:100%;
+	margin: auto;
+}
+
+.titlu 
+{
+	text-align: center;
+	color: #006400;
+	font-family: "Verdana";
+	border-bottom: 2px dotted white;
 }

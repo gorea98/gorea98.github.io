@@ -29,3 +29,5 @@ document.getElementById("id_logic").innerHTML = "Logic = UI Version 2020.02.02.0
               }, false);
         }
     
+//////////////////////////////////////////////////////////////////////
+

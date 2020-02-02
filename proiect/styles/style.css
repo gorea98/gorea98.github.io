@@ -5,6 +5,7 @@ body
 
 #div_busola
 {
+	display: flex;	
 	width:100%;
 	background-color: #f5f5dc;
 	margin: auto;
@@ -19,6 +20,7 @@ body
 
 .titlu 
 {
+	font-size: 50px;
 	text-align: center;
 	color: #006400;
 	font-family: "Verdana";

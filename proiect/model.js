@@ -1,28 +1,27 @@
+var busola = document.getElementById('busola');
 
-        var busola = document.getElementById('busola');
-        if(window.DeviceOrientationEvent) {
-  
-          window.addEventListener('deviceorientation', function(event) {
-                var alpha;
-                //Check for iOS property
+	if(window.DeviceOrientationEvent) {
+		window.addEventListener('deviceorientation', function(event) {
+			var alpha;
+			
+                //pentru iOS
                 if(event.webkitCompassHeading) {
                   alpha = event.webkitCompassHeading;
-                  //Rotation is reversed for iOS
                   busola.style.WebkitTransform = 'rotate(-' + alpha + 'deg)';
                 }
-                //non iOS
+				
+                // pentru Android
                 else {
-                  alpha = event.alpha;
-                  webkitAlpha = alpha;
-                  if(!window.chrome) {
-                    //Assume Android stock (this is crude, but good enough for our example) and apply offset
-                    webkitAlpha = alpha-270;
-                  }
-                }
+					alpha = event.alpha;
+					webkitAlpha = alpha;
+						if(!window.chrome) {
+							webkitAlpha = alpha-270;
+						}
+					}
  
+				// Rotarile imaginii imaginii
                 busola.style.Transform = 'rotate(' + alpha + 'deg)';
                 busola.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
                 busola.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
               }, false);
         }

@@ -2,10 +2,10 @@
 
 	var busola = document.getElementById('busola');
 	
-	if(window.DeviceOrientationEvent) {
-		window.addEventListener('deviceorientation', function(event) 
-		window.addEventListener('deviceorientationabsolute', deviceOrientationEvent, true){
-			var alpha;
+	deviceOrientationEvent: function(event){
+    console.log(event.alpha);
+};
+window.addEventListener("deviceorientationabsolute", deviceOrientationEvent, true);
 			
                 //pentru iOS (CompassHeading - diferenta dintre viteza imprejurul axei z si Nord : directia masurata in raport cu nordul magnetic)
                 if(event.webkitCompassHeading) {

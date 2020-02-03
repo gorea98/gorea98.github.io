@@ -20,7 +20,7 @@ body
 	margin: auto;
 }
 
-.titlu 
+#titlu 
 {
 	font-size: 30px;
 	text-align: center;
@@ -29,24 +29,47 @@ body
 	border-bottom: 5px dotted #ffff00;
 }
 
-.versiune {
+.versiune 
+{
 	
 	position:absolute;
 	top: 550px;
 	left: 260px;
 }
 
-.coordonate {
+#coordonate 
+{
 	
 	position:absolute;
 	top: 542px;
 	left: 152px;
 }
 
-.soare {
+#soare 
+{
 	
 	position:absolute;
 	top: 542px;
 	left: 44px;
 }
+
+#id_UI 
+{
+	visibility: hidden;
+}
+	
+#id_logic
+{
+	visibility: hidden;
+}	
+	
+#id_geo
+{
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Verdana";
+	font-size: 20px;
+	color: #800000;
+}	
+	
 }
